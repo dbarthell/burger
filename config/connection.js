@@ -1,14 +1,15 @@
-var key = require("./key.js");
+var key = require("/Users/dbarthell/burger/config/key.js");
+var mysql = require("mysql");
 
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
     password: key.key,
-    database: "seinfeld_db"
+    database: "burgers_db"
 });
 
-connection.connect(function (err) {
+var connect = connection.connect(function (err) {
     if (err) {
         console.error("error connecting: " + err.stack);
         return;
@@ -16,6 +17,4 @@ connection.connect(function (err) {
     console.log("connected as id " + connection.threadId);
 });
 
-module.exports = {
-    connection: connection
-}
+module.exports = connection;
