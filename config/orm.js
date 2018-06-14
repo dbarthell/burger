@@ -12,7 +12,7 @@ var orm = {
         });
     },
     insertOne: function (vals, cb) {
-        var queryString = "INSERT INTO burgers (burger) VALUES (?)";
+        var queryString = "INSERT INTO burgers VALUES (?)";
 
         console.log(queryString);
 

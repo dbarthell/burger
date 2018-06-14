@@ -15,9 +15,8 @@ router.get("/", function (req, res) {
 
 router.post("/", function (req, res) {
     burger.insertOne(
-        req.body.value, function (result) {
+        req.body, function (result) {
     });
 });
-
 
 module.exports = router;
