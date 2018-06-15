@@ -40,19 +40,7 @@ var orm = {
             cb(result);
         });
     },
-    updateOne: function (vals, cb) {
-        var queryString = "UPDATE burgers WHERE burger = ?";
 
-        console.log(queryString);
-
-        connection.query(queryString, vals, function (err, result) {
-            if (err) {
-                throw err;
-            }
-
-            cb(result);
-        });
-    },
 }
 
 module.exports = orm;
