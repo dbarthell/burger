@@ -1,8 +1,8 @@
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Big Mac", true);
+VALUES ("Big Mac", false);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Whopper", true);
+VALUES ("Whopper", false);
 
 INSERT INTO burgers (burger_name, devoured)
 VALUES ("Turkey Burger", false);
